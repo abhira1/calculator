@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./ButtonsContainer.module.css";
 const ButtonsContainer = ({ onButtonClick }) => {
   const buttonNames = [
-    "C",
+    
     "1",
     "2",
     "3",
@@ -19,6 +19,7 @@ const ButtonsContainer = ({ onButtonClick }) => {
     "*",
     "=",
     ".",
+    "C",
   ];
   return (
     <div className={styles.buttonContainer}>
