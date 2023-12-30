@@ -16,16 +16,10 @@ const ButtonsContainer = ({ onButtonClick }) => {
     "9",
     "*",
     ".",
-    "0",
-    
-   
-    
-    
-    "/",
-   
-    "=",
-   
+    "0",   
+    "/",   
     "C",
+    "=",
   ];
   return (
     <div className={styles.buttonContainer}>
