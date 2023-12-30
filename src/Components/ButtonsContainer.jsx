@@ -14,14 +14,16 @@ const ButtonsContainer = ({ onButtonClick }) => {
     "7",
     "8",
     "9",
-    "*",
+    ".",
     "0",
+    "*",
+   
     
     
     "/",
    
     "=",
-    ".",
+   
     "C",
   ];
   return (
