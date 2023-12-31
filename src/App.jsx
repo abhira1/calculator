@@ -23,6 +23,7 @@ function App() {
   return (
     <>
       <div className="calculator" >
+        <div className='cal-name'>Abhishek calculator</div>
         <Display displayValue={calVal}></Display>
         <Buttons onButtonClick={onButtonClick} ></Buttons>
         
