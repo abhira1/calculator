@@ -1,36 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Display from './components/Display'
-import Buttons from './components/Buttons'
+import { useState } from "react";
+import "./App.css";
+import Display from "./components/Display";
+import Buttons from "./components/Buttons";
 
 function App() {
   const [calVal, setCalVal] = useState("");
   const onButtonClick = (buttonText) => {
-    if(buttonText ==="C"){
+    if (buttonText === "C") {
       setCalVal("");
-    }else if(buttonText === "="){
-      const result =eval(calVal);
+    } else if (buttonText === "=") {
+      const result = eval(calVal);
       setCalVal(result);
-    }else {
+    } else {
       const newDisplayValue = calVal + buttonText;
       setCalVal(newDisplayValue);
     }
   };
-  
 
   return (
     <>
-      <div className="calculator" >
-        <div className='cal-name'>Abhishek calculator</div>
+      <div className="calculator">
+        <div className="cal-name">bunty calculator</div>
         <Display displayValue={calVal}></Display>
-        <Buttons onButtonClick={onButtonClick} ></Buttons>
-        
+        <Buttons onButtonClick={onButtonClick}></Buttons>
       </div>
-      
     </>
-  )
+  );
 }
 
-export default App
+export default App;
